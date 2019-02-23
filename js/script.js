@@ -28,4 +28,10 @@ $(document).ready(function() {
         }
       }
     })
+    $(".counter").each(function () {
+      let element = $(this);
+      let endVal = parseInt(element.text());
+
+      element.countup(endVal);
+      })
   })

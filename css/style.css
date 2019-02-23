@@ -28,7 +28,7 @@ body {
   background-image: url(../img/icons/prev.png)
   }
 }
-@media only screen and (min-device-width: 300px) {
+@media only screen and (min-device-width: 400px) {
   .slides-navigation a.next {
   right: 20px;
   background-image: url(../img/icons/next.png)
@@ -71,14 +71,52 @@ body {
   background-color: #55E6C1;
   color: #fff;
 }
+
 .squareItem {
   margin-top: 30px;
   position: relative;
+
 }
 .squareItemContainer {
   position: relative;
-  padding: 50px 15px 35px;
+  padding: 200px 105px 35px;
   text-align: center;
   border: 2px solid #444;
   border-top: none;
+}
+.squareItemContainer::before,
+.squareItemContainer::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 30%;
+  border-bottom: 2px solid #444;
+}
+.squareItemContainer::before {
+  right: 0px;
+}
+.squareItemContainer::after {
+  left: 0px;
+}
+.squareContent h2 {
+  font-size: 56px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  color: #e74c3c;
+}
+.squareContent h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 0;
+}
+.squareIcon {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 40%;
+  height: 60px;
+  font-size: 45px;
+  margin-left: -20%;
+  color: #444;
 }
