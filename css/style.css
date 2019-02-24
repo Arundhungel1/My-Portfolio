@@ -5,16 +5,6 @@ body {
   background-color: #fff;
   letter-spacing: 1px;
 }
-/* nav {
-  position: relative;
-
-  z-index: 1000 !important;
-} */
-/* .slides-container {
-  width: 940px;
-  position:absolute;
-   z-index: -1000;
-} */
 
 .logo {
   position: fixed;
@@ -61,17 +51,7 @@ nav ul li a {
   color: #fff;
   display: none;
 }
-/* .menutoggle {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  background: white;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-  direction: none;
-} */
+
 
 ul li a .icon {
   width: 33px;
