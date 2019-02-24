@@ -3,6 +3,18 @@ $(document).ready(function() {
     animation: 'fade',
     play: 5000
     });
+    $(".menu-icon").on("click", function() {
+      $("nav ul").toggleClass("showing");
+      })
+
+      $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+        else {
+          $('nav').removeClass('black');
+        }
+      })
 
   let typed = new Typed(".typed", {
       strings: ["Web-Developer.", "Front-End Developer.", "Learner."],
