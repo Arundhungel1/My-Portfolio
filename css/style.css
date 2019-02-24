@@ -29,7 +29,7 @@ nav {
   width: 100%;
   z-index: 1000;
 }
-nav ul {
+ nav ul {
   list style: none;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
@@ -61,6 +61,83 @@ nav ul li a {
   color: #fff;
   display: none;
 }
+/* .menutoggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  direction: none;
+} */
+
+ul li a .icon {
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 33px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: #fff;
+}
+ul li a .icon .fas {
+  width: 100%;
+  height: 100%;
+  line-height: 33px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: #fff;
+}
+ul li a .icon .far {
+  width: 100%;
+  height: 100%;
+  line-height: 28px;
+  font-size: 34px;
+  transition: 0.3s;
+  color: #fff;
+}
+ul li a .icon .fa:last-child {
+  color: #e91e63;
+  }
+ul li a .icon .fas:last-child {
+    color: #e91e63;
+    }
+ul li a .icon .far:last-child {
+      color: #e91e63;
+      }
+ul li a:hover .icon .fa {
+    transform: translateY(-100%);
+  }
+ul li a:hover .icon .fas {
+    transform: translateY(-100%);
+  }
+ul li a:hover .icon .far {
+    transform: translateY(-100%);
+  }
+ul li a.name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  transition: 0.5s;
+}
+
 @media(max-width: 580px) {
   .logo {
     position: fixed;
@@ -69,21 +146,22 @@ nav ul li a {
   }
   nav ul {
     max-height: 0px;
-    background: #000;
-  }
+    background: #000;}
+
+
   nav.black ul {
     background: #000;
   }
   .showing {
-    max-height: 30em;
+    max-height: 45em;
   }
   nav ul li {
     box-sizing: border-box;;
     width: 100%;
     padding: 24px 0;
     text-align: center;
-  }
-  .menu-icon{
+    }
+  .menu-icon {
     display: block;
   }
 }
@@ -135,8 +213,12 @@ nav ul li a {
 }
 
 .titleMessage .heading .main {
-  font-size: 60px;
-  font-family: 'Supermercado One', cursive;
+  font-size: 70px;
+  font-family: 'Fredericka the Great', cursive;
+}
+.greet{
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
 }
 .titleMessage .heading .sub {
   font-size: 30px;
@@ -148,7 +230,11 @@ nav ul li a {
 }
 .profileImage {
   max-width: 100%;
-  border-radius: 30%;
+  border-radius: 50%;
+}
+.col-md-7 {
+  text-align: left;
+  font-size: 20px;
 }
 .skillsSection,
 .contactSection {
@@ -167,7 +253,7 @@ nav ul li a {
   text-align: center;
   border: 2px solid #444;
   border-top: none;
-  
+
 }
 .squareItemContainer::before,
 .squareItemContainer::after {
