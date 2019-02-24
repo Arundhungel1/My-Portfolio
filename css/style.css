@@ -12,7 +12,13 @@ body {
   margin: 16px 36px;
   color: #fff;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 50px;
+  transition: transform .2s; /* Animation */
+}
+
+.logo:hover {
+  transform: scale(1.5);
+  color: #DF3C38;
 }
 nav {
   position: fixed;
@@ -65,7 +71,7 @@ ul li a .icon .fa {
   height: 100%;
   line-height: 33px;
   font-size: 34px;
-  transition: 0.5s;
+  transition: 0.3s;
   color: #fff;
 }
 ul li a .icon .fas {
@@ -73,7 +79,7 @@ ul li a .icon .fas {
   height: 100%;
   line-height: 33px;
   font-size: 34px;
-  transition: 0.5s;
+  transition: 0.3s;
   color: #fff;
 }
 ul li a .icon .far {
@@ -136,7 +142,7 @@ ul li a .name span {
     max-height: 45em;
   }
   nav ul li {
-    box-sizing: border-box;;
+    box-sizing: border-box;
     width: 100%;
     padding: 24px 0;
     text-align: center;
@@ -157,11 +163,15 @@ ul li a .name span {
 }
 .slides-navigation .prev,
 .slides-navigation .next {
-
   width: 47px;
   height: 47px;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: transform .2s
+}
+.slides-navigation .prev:hover,
+.slides-navigation .next:hover {
+  transform: scale(1.2);
 }
 @media only screen and (min-device-width: 400px) {
   .slides-navigation a.prev {
@@ -216,6 +226,30 @@ ul li a .name span {
   text-align: left;
   font-size: 20px;
 }
+#social .portLink {
+  text-align: center;
+  font-size: 40px;
+  color: #55E6C1;
+}
+
+#social .portLink ul {
+  float: left;
+}
+
+#social .portLink ul li {
+  float: left;
+  padding-left: 50px;
+  list-style-type: none;
+}
+#social .portLink .fab {
+    color: #000;
+
+}
+#social .portLink .fab:hover {
+  color: #55E6C1
+
+}
+
 .skillsSection,
 .contactSection {
   background-color: #55E6C1;
