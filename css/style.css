@@ -5,13 +5,22 @@ body {
   background-color: #fff;
   letter-spacing: 1px;
 }
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
 
+#slides {
+  overflow: hidden;
+
+}
 .overlay {
   width: 100%;
   height: 100%;
   z-index: 3;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color: rgba(0, 0, 0, 0.5)
 }
 .slides-navigation {
   z-index: 6;
@@ -237,4 +246,12 @@ color: #fff;
 }
 .items {
   padding: 0;
+}
+.copyrightSection {
+  background-color: #000;
+  color: #fff;
+  padding-left: 30px 5px
+}
+.copyrightSection p {
+  margin: 0;
 }
