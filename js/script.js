@@ -31,14 +31,6 @@ $(document).ready(function() {
       startDelay: 1000,
       showCursor: false
     });
-
-    // $.simpleTicker($(".ticker"),{
-    //     speed : 1000,
-    //     delay : 3000,
-    //     easing : 'swing',
-    //     effectType : 'slide'
-    // });
-
     $(".counter").each(function () {
           let element = $(this);
           let endVal = parseInt(element.text());
