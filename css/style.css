@@ -124,7 +124,7 @@ ul li a .name span {
   transition: 0.5s;
 }
 
-@media only screen and (min-device-width: 400px){
+@media(max-width: 580px) {
   .logo {
     position: fixed;
     top: 0;
