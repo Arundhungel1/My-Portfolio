@@ -255,6 +255,20 @@ ul li a .name span {
   background-color: #55E6C1;
   color: #fff;
 }
+#skills h2 {
+  font-size: 50px;
+}
+#skills p {
+  font-size: 20px;
+}
+.ticker {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 40px;
+  background-color: #55E6C1;
+  border: none;
+}
 
 .squareItem {
   margin-top: 30px;
