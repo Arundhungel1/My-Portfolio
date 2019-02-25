@@ -32,12 +32,12 @@ $(document).ready(function() {
       showCursor: false
     });
 
-    $.simpleTicker($(".ticker"),{
-        speed : 1000,
-        delay : 3000,
-        easing : 'swing',
-        effectType : 'slide'
-    });
+    // $.simpleTicker($(".ticker"),{
+    //     speed : 1000,
+    //     delay : 3000,
+    //     easing : 'swing',
+    //     effectType : 'slide'
+    // });
 
     $(".counter").each(function () {
           let element = $(this);
