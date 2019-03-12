@@ -31,12 +31,7 @@ $(document).ready(function() {
       startDelay: 1000,
       showCursor: false
     });
-    $(".counter").each(function () {
-          let element = $(this);
-          let endVal = parseInt(element.text());
-
-          element.countup(endVal);
-      });
+    
 
       $("[data-fancybox]").fancybox();
 
